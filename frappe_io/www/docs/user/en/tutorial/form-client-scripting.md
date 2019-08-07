@@ -16,7 +16,7 @@ To start the script, in the `library_management/doctype/library_transaction` fol
 	frappe.ui.form.on("Library Transaction", "library_member",
 		function(frm) {
 			frappe.call({
-				"method": "frappe.client.get",
+				method: "frappe.client.get",
 				args: {
 					doctype: "Library Member",
 					name: frm.doc.library_member
